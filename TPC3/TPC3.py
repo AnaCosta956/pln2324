@@ -22,8 +22,10 @@ texto = re.sub(r"(\.\n\n)(.+)", r"\1@\2", texto)
 
 termos = re.findall(r"@(.+)\n([^@]+)", texto)
 
+header_file = open(r"TPC3\header.html","r+", encoding="utf-8")
+header = header_file.read()
+header_file.close()
 
-header = "<p><img src='images.jpg'  width='150' height='70' /> <bold>Dicionário Médico</bold></p>"
 descricao = "<h3>Este é um dicionário médico desenvolvido em pln</h3>"
 
 body="<body>"
@@ -36,6 +38,6 @@ body += "</body>"
 
 html = header+descricao+body
 
-file_out = open("TPC3\TP3.html", "w", encoding="utf-8")
+file_out = open("TPC3\TPC3.html", "w", encoding="utf-8")
 file_out.write(html)
 file_out.close()
