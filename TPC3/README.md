@@ -4,6 +4,7 @@ Programa para processamento e extração de termos, constituidos por designaçã
 ## Decisões de implementação
 De forma a ser possível identificar as designações e, consequentemente o início de cada temo, foi definido que deveria ser adicionado o "@" antes de cada uma delas. No entanto, antes de realizar a adição deste marcador procedeu-se à realização de transformações para uniformizar o padrão do documento. Concretamente, foi adicionado um ponto final, quando este não existia, no fim das descrições dos termos, para tal, foi utilizado o padrão "[^.]\n\n[^\f]". Foi essencial excluir situações com \f, pois estas tratam-se de situações excecionais com abordagens de tratamento diferentes. 
 No que se refere às instâncias de pagebreak, representadas no documento txt, pelo padrão "\n\n\f", foi possível perceber que este pode ocorrer, de forma mais comum, em 4 situações:
+
     - entre frases da descrição, sendo que antes do \n\n\f se encontra um ponto final e depois o início de uma nova frase, que começa por uma letra maiúscula;
         Exemplo:
             quimiotaxia
