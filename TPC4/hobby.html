@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .texto{
+        display: flex;
+        padding: 50px;
+        box-sizing: border-box;
+        margin: 0px;
+        font-size: 50px;
+        font-family: Cambria;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .temas{
+        display: flex;
+        padding: 25px;
+        box-sizing: border-box;
+        margin: 0px;
+        height: 100px;
+        width: 253px;
+        font-size: 25px;
+        font-family: Cambria;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        background-color: rgba(101, 101, 130, 0.871);
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin:0;
+    }
+    .colunas{
+        display: block;
+        padding: 2px;
+    }
+    .imagens{
+        border: 2px;
+        border-color: rgba(69, 69, 89, 0.871);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .acidentes{
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        padding-left: 30px;
+    }
+    .titulo{
+        font-family: Cambria;
+        padding-left: 30px;
+    }
+    .descricoes{
+        margin-top: 0;
+        font-family: Cambria;
+        font-size: 20px;
+        padding-left: 8px;
+    }
+    .link:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .link:visited {
+        color: rgba(34, 34, 43, 0.871);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .link:hover {
+        color: rgb(52, 39, 53);
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+</style>
+<header>
+    <title>Mayday! Desastres aéreos</title>
+</header>
+<body style="background-color: rgba(150, 151, 193, 0.871);">
+    <div class="head">
+        <div class="imagens">
+            <div class = "colunas">
+                <img src=".\Imagens\imagem1.jpg" height=98px width="253px" border="2px"> 
+                <p class="temas"><a  href="#Mortiferos" class="link">Acidentes mais mortíferos</a></p>
+            </div>
+            <div class = "colunas">
+                <p class="temas"><a href="#Famosos" class="link">Famosos</a></p>
+                <img src=".\Imagens\imagem2.jpg" height=98px width="253px" border="2px"> 
+            </div>
+                
+        </div>
+        <div class="texto">
+                Mayday!
+                Desastres Aéreos
+        </div>
+        <div class="imagens">
+            <div class="colunas">
+                <img src=".\Imagens\imagem3.jpg" height=98px width="253px" border="2px">
+                <p class="temas"><a href="#desaparecidos" class="link">Desaparecidos</a></p>
+            </div>
+            <div class="colunas">
+                <p class="temas"><a href="#Portugal" class="link">Portugal</a></p>
+                <img src=".\Imagens\imagem4.jpg" height=98px width="253px" border="2px ">
+            </div>
+                 
+        </div>
+    </div>
+    <hr height="3px" color="black">
+    <div class="body">
+        <a id="Mortiferos" ><h2>&#8667 Acidentes mais mortíferos</h2></a>
+        <h3 class="titulo">Desastre aéreo de Tenerife</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Desastre_a%C3%A9reo_de_Tenerife" target=”_blank” class="link">
+                <img src=".\Imagens\imagem3.jpg" height=150px width="300px" border="2px ">
+            </a>
+            <div>
+                <p class="descricoes">No dia 27 de março de 1977 a colisão de dois Boeing 747, um da KLM Royal Dutch Airlines e outro da Pan American, 
+                    na pista do aeroporto de Tenerife Norte, arquipélago das Canárias, causou a morte de <b>583 pessoas</b>. 
+                    As circunstâncias que deram origem ao acidente começaram no aeroporto de Los Palmas, Gran Canária, que, 
+                    após a explosão de uma bomba, foi encerrado e desviou todos os seus voos para o aeroporto de Tenerife Norte.
+                    A grande quantidade de aviões, num aeroporto que não estava preparado para tal , juntamente com a impaciência do comandante 
+                    do KLM e ao nevoeiro que impedia visibilidade, levou a que este avião inicia-se a descolagem quando o avião da PanAm ainda estava a fazer manobras nessa mesma pista.
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b> Sobrecarga abrupta e incomum do aeroporto, mau tempo, 
+                    interferência nas comunicações e erro do comandante.
+                </p>
+            </div>
+           
+            
+        </div>
+        <h3 class="titulo">Japan Airlines 123</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Voo_Japan_Airlines_123" target="_blank" class="link">
+                <img src=".\Imagens\japan_123.jpg" height=150px width="300px" border="2px ">
+            </a>
+            <div>
+                <p class="descricoes">O Voo Japan Airlines 123, efetuado por um Boeing 747SR, entre Tóquio e Osaka, 
+                    sofreu uma súbita descompressão explosiva, no dia 12 de agosto de 1985, que causou a morte de <b>520 pessoas</b>.
+                    A reparação incorreta do avião, aquando de um acidente menor anterior, levou à descompressão explosiva da cabine e à
+                    destruição de grande parte do estabilizador vertical e causou a perda completa dos controles hidráulicos de todo o avião.
+                    </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b> Reparação prévia defeituosa, levou à descompressão rapida da aeronave.
+                </p>
+            </div>
+        </div>
+        <h3 class="titulo">Voo Turkish Airlines 981</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Voo_Turkish_Airlines_981" target="_blank" class="link">
+                <img src=".\Imagens\turkish_981.jpg" height=150px width="300px" border="2px ">
+            </a>
+            <div>
+                <p class="descricoes">
+                    O Voo Turkish Airlines 981, realizado por um  McDonnell Douglas DC-10, caiu, no dia 3 de março de 1974, numa
+                    floresta nos arredores de Paris, matando <b>346 pessoas</b>. Ocorreu devido à descompressão explosiva causada 
+                    pela falha do mecanismos de tranca da porta do compartimento de carga.
+
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b> Descompressão explosiva.
+                </p>
+            </div>
+            
+        </div>
+        <h3 class="titulo">Colisão de Charkhi Dadri</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Colis%C3%A3o_a%C3%A9rea_de_Charkhi_Dadri" target="_blank" class="link">
+                <img src=".\Imagens\Charkhi_Dadri.jpg" height=150px width="300px" border="2px ">
+            </a>
+            <div>
+                <p class="descricoes">A colisão aérea de Charkhi Dadri 
+                    aconteceu no dia 12 de novembro de 1996 e envolveu o voo Saudi Arabian Airlines 763, 
+                    um Boeing 747, e o voo Kazakhstan Airlines 1907, um Ilyushin Il-76. Estas duas aeronaves colidiram
+                    em pleno voo perto de Charkhi Dadri, a 100 km a oeste de Deli na Índia, levando à morte de todos os passageiros,
+                    <b>312 pessoas.</b> A colisão ocorreu devido à descida, não autorizada, do avião da Kazakhstan Airlines até aos 14.000 pés,
+                    altitude que estava reservada para o voo da Saudi Arabian.  
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Má compreenção da lingua inglesa e descostume da utilização das métricas de pés e milhas naúticas
+                     por parte da equipa do Voo Kazakhstan.
+                </p>
+            </div>
+        </div>
+
+
+        
+
+
+        <a id="Portugal"><h2>&#8667 Acidentes em solo Português</h2></a>
+        <h3 class="titulo">Caso Camarate</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Caso_Camarate " target="_blank" class="link">
+                <img src=".\Imagens\camarate.jpg" height=150px width="300px" border="2px "> 
+            </a>
+            <div>
+                <p class="descricoes">
+                    O acidente Camarte ocorreu no dia 4 de dezembro de 1980 quando o Cessna 421 caiu 
+                    sobre o bairro das Fontaínhas, em Camarate, a norte de Lisboa. O acidente causou a morte de <b>7 pessoas</b>, incluindo o, na altura, 
+                    primeiro-ministro,  Francisco Sá Carneiro, e o ministro da Defesa, Adelino Amaro da Costa. Apesar de não ter sido determinada a razão
+                    concreta do acidente, a última comissão parlamentar, realizada em 2013, afirma no relatório que a queda se deveu a um atentado.  
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Indeterminado, possível atentado.
+                </p>
+            </div>
+        </div>
+        <h3 class="titulo">Voo TAP Portugal 425</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Voo_TAP_Portugal_425" target="_blank" class="link">
+                <img src=".\Imagens\TAP.jpg" height=150px width="300px" border="2px ">
+            </a>
+            <div>
+                <p class="descricoes">
+                    O acidente do Voo TAP Portugal 425, realizado por um Boeing 727-282, entre Bruxelas e o Funchal, ocorreu no dia 19 de Novembro de 1977 e 
+                    provocou a morte de <b>131 pessoas</b>.
+                    Neste acidente, não foi possível imobilizar o avião na pista, levando a que este se despenhasse no mar.
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Aquaplanagem e condições metereológicas.
+                </p>
+            </div>
+        </div>
+        <h3 class="titulo">Voo Independent Air 1851</h3>
+        <div class="acidentes">
+            <a href="https://en.wikipedia.org/wiki/Independent_Air_Flight_1851" target="_blank" class="link">
+                <img src=".\Imagens\Independent.jpg" height=150px width="300px" border="2px "> 
+            </a>
+            <div>
+                <p class="descricoes">
+                    O Voo Independent Air 1851 foi realizado por um Boeing 707 e tinha como percurso Bergamo, nos arredores de Milão, e Punta Cana, com uma escala para reabastecimento nos Açores.
+                    No dia 8 de fevereiro de 1989 o avião colidiu com o Pico Alto, na ilha de Santa Maria, causando a morte de <b>144 pessoas</b> e tornando-se 
+                    o acidente mais fatal ocorrido em solo português. 
+                    
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Erro do piloto.
+                </p>
+            </div>
+        </div>
+
+
+        <a id="desaparecidos"><h2>&#8667 Aviões que desapareceram</h2></a>
+        <h3 class="titulo">Voo 19</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Voo_19" target="_blank" class="link">
+                <img src=".\Imagens\voo_19.jpg" height=150px width="300px" border="2px "> 
+            </a>
+            <div>
+                <p class="descricoes">
+                    No dia 5 de dezembro de 1945, uma esquadrilha de cinco aviões Grumman TBF Avenger deixou 
+                    a Base Aero-Naval de Fort Lauderdale para realizar uma operação de treinamento. Todas as aeronaves desapareceram, tendo a sua última localização
+                    registada sido o Triângulo das Bermudas. A equipa de buscas, constituida por 13 pessoas, também desapareceu após comunicar à torre de controlo que 
+                    se aproximava do local de desaparecimento. No total foram declaradas mortas <b>27 pessoas</b>, 14 da esquadrilha que desapareceu originalmente
+                    e 13 da equipa de salvamento.
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Indeterminado.
+                </p>
+            </div>
+        </div>
+        <h3 class="titulo">Voo Malaysia Airlines 370</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Voo_Malaysia_Airlines_370" target="_blank" class="link">
+                <img src=".\Imagens\malasia.jpg" height=150px width="300px" border="2px "> 
+            </a>
+            
+            <div>
+                <p class="descricoes">
+                    No dia 8 de março de 2014, o Boeing 777, que realizava a viagem entre Kuala Lumpur, na Malásia, e Pequim, na China, desapareceu
+                    dos radares sem qualquer comunicação de problemas nos instantes anteriores. Segundo registos de satélites o avião voou durante várias 
+                    horas, com os equipamentos de comunicação desligados, até esgotar o combustível e cair no Oceano Índico.  
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Provável erro humano, violação intencional dos procedimentos.
+                </p>
+            </div>
+        </div>
+
+        <a id="Famosos"><h2>&#8667 Acidentes que vitimaram celebridades</h2></a>
+        <h3 class="titulo">Equipa Chapecoense</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Voo_LaMia_2933" target="_blank" class="link">
+                <img src=".\Imagens\chapecoense.jpg" height=150px width="300px" border="2px "> 
+            </a>
+            
+            <div>
+                <p class="descricoes">
+                    O Voo 2933 da LaMia, a serviço do clube brasileiro Associação Chapecoense de Futebol, despenhou-se
+                    perto de Cerro El Gordo, no dia 28 de novembro de 2016, vitimando <b>71 pessoas</b>. 
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Falta de combostivel, devido a mau planeamento da rota.
+                </p>
+            </div>
+            
+        </div>
+        <h3 class="titulo">Kobe Bryant</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Acidente_do_helic%C3%B3ptero_Sikorsky_S-76_prefixo_N72EX_em_2020" target="_blank" class="link">
+                <img src=".\Imagens\kobe.jpg" height=150px width="250px" border="2px "> 
+            </a>
+             
+            <div>
+                <p class="descricoes">
+                    O acidente do helicóptero Sikorsky S-76, ocorreu no dia 26 de janeiro de 2020, e vitimou <b>9 pessoas</b>, incluindo Kobe Bryant e 
+                    a sua filha Gianna. O helicóptero, apesar de sob controlo, colidiu com o solo devido a erro do piloto.
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Erro do piloto.
+                </p>
+            </div>
+        </div>
+        <h3 class="titulo">Marília Mendonça</h3>
+        <div class="acidentes">
+            <a href="https://pt.wikipedia.org/wiki/Acidente_do_Beechcraft_King_Air_prefixo_PT-ONJ_em_2021" target="_blank" class="link">
+                <img src=".\Imagens\marilia.jpg" height=150px width="200px" border="2px ">  
+            </a>
+            
+            <div>
+                <p class="descricoes">
+                    O Acidente do Beechcraft King Air, que ocorreu no dia 5 de novembro de 2021, causou a morte de <b>5 pessoas</b>, incluindo a
+                    cantora Marília Mendonça.
+                </p>
+                <p class="descricoes"><b>&#10;&#13;Causa:</b>Erro do piloto, conhecimento insuficiente da rota.
+                </p>
+            </div>
+        </div>
+
+
+    </div>    
+</body>
+</html>
