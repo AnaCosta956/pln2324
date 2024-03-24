@@ -1,0 +1,14 @@
+{% extends 'layout_parent.html' %}
+{% block head %}
+    <title>Conceitos</title>
+{% endblock %}
+
+{% block body %}
+
+<ul class="list-group">
+
+    {% for t in termos%}
+        <a href="/conceitos/{{t}}" class="list-group-item list-group-item-action">{{t}}</a>
+    {% endfor %}
+</ul>
+{% endblock %}
