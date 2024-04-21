@@ -1,0 +1,24 @@
+{% extends 'layout_parent.html' %}
+
+{% block body %}
+
+<table id="myTable" class="p-3 display">
+    <thead>
+        <tr>
+            <th>Conceitos</th>
+            <th>Descrição</th>
+            <th>Tradução</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for conceito in conceitos %}
+        <tr>
+            <td>{{conceito}}</td>
+            <td>{{conceitos[conceito]["desc"]}}</td>
+            <td>{{conceitos[conceito]["en"]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'layout_parent.html' %}
+{% block head %}
+    <title>Conceitos</title>
+{% endblock %}
+
+{% block body %}
+<div style="padding: 6px;">
+<form  action="/conceitos" method="POST">
+    <div class="mb-3">
+      <label for="InputDesignacao" class="form-label">Designação</label>
+      <input type="text" class="form-control" id="InputDesignacao" aria-describedby="emailHelp" name="designacao">
+    </div>
+    <div class="mb-3">
+        <label for="InputDescricao" class="form-label">Descrição</label>
+        <input type="text" class="form-control" id="InputDescricao" aria-describedby="emailHelp" name="descricao">
+    </div>
+    <div class="mb-3">
+        <label for="InputTraducao" class="form-label">Tradução EN</label>
+        <input type="text" class="form-control" id="InputTraducao" aria-describedby="emailHelp" name="en">
+    </div>
+    <button type="submit" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Adicionar</button>
+  </form>
+<hr>
+
+<ul class="list-group">
+
+    {% for t in termos%}
+        <a href="/conceitos/{{t}}" class="list-group-item list-group-item-action">{{t}}</a>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}
